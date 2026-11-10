@@ -19,7 +19,7 @@
 (function(){var d=document.documentElement;d.className+=' js';var t=null;try{t=localStorage.getItem('theme')}catch(e){}
 if(t==='dark'||(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark');})();
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"HOSA Legal Consult","url":"https://hopeosabuase.com/","image":"https://hopeosabuase.com/og.jpg","founder":{"@type":"Person","name":"Hope Osasere Osabuase","jobTitle":"Principal Counsel"},"telephone":"+2347059450070","email":"hopeosabuase123@gmail.com","address":{"@type":"PostalAddress","streetAddress":"86 Ekewan Road, beside GTBank","addressLocality":"Benin City","addressRegion":"Edo State","addressCountry":"NG"},"areaServed":"Benin City, Edo State","sameAs":["https://instagram.com/Legally_Hopie","https://tiktok.com/@Hopie_esq","https://facebook.com/osabuase.hope"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"HOSA Legal Consult","url":"https://hopeosabuase.com/","image":"https://hopeosabuase.com/og.jpg","founder":{"@type":"Person","name":"Hope Osasere Osabuase","jobTitle":"Principal Counsel"},"telephone":"+2347059450070","email":"hope@hopeosabuase.com","address":{"@type":"PostalAddress","streetAddress":"86 Ekewan Road, beside GTBank","addressLocality":"Benin City","addressRegion":"Edo State","addressCountry":"NG"},"areaServed":"Benin City, Edo State","sameAs":["https://instagram.com/Legally_Hopie","https://tiktok.com/@Hopie_esq","https://facebook.com/osabuase.hope"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -593,7 +593,7 @@ footer a{color:var(--accent);text-decoration:none}
         </div>
         <div class="c-row">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          <a href="mailto:hopeosabuase123@gmail.com">hopeosabuase123@gmail.com</a>
+          <a href="mailto:hope@hopeosabuase.com">hope@hopeosabuase.com</a>
         </div>
         <div class="c-row">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -617,7 +617,7 @@ footer a{color:var(--accent);text-decoration:none}
         <label class="sr" for="fMsg">Short summary of your matter</label>
         <textarea id="fMsg" name="message" placeholder="Short summary of your matter" required></textarea>
         <button type="submit">Send on WhatsApp</button>
-        <a href="mailto:hopeosabuase123@gmail.com" id="fMail" class="c-alt">Send by email instead</a>
+        <a href="mailto:hope@hopeosabuase.com" id="fMail" class="c-alt">Send by email instead</a>
         <p class="c-note">Sending a message doesn't make you a client. Share a short summary only; no sensitive documents until we speak.</p>
       </form>
     </div>
@@ -672,7 +672,7 @@ tog.onclick=()=>{
 /* Form -> WhatsApp (email fallback) */
 const cForm=document.getElementById('cForm'),fMail=document.getElementById('fMail');
 function composeMsg(){const f=cForm.elements;return 'Hello Barr. Hope,\n\nName: '+f.name.value+(f.phone.value?'\nPhone: '+f.phone.value:'')+(f.service.value?'\nMatter: '+f.service.value:'')+'\n\n'+f.message.value}
-cForm.addEventListener('input',()=>{fMail.href='mailto:hopeosabuase123@gmail.com?subject='+encodeURIComponent('Legal enquiry'+(cForm.elements.service.value?': '+cForm.elements.service.value:''))+'&body='+encodeURIComponent(composeMsg())});
+cForm.addEventListener('input',()=>{fMail.href='mailto:hope@hopeosabuase.com?subject='+encodeURIComponent('Legal enquiry'+(cForm.elements.service.value?': '+cForm.elements.service.value:''))+'&body='+encodeURIComponent(composeMsg())});
 cForm.addEventListener('submit',e=>{e.preventDefault();location.href='https://wa.me/2347059450070?text='+encodeURIComponent(composeMsg())});
 
 /* FAQ */
